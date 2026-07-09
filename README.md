@@ -7,20 +7,14 @@ TokenLab supports OpenAI-compatible `/v1` routes plus native Responses, Anthropi
 ## Install
 
 ```bash
-npm install ai @tokenlab/ai-sdk-provider
-```
-
-Until the npm package is published, install from GitHub:
-
-```bash
-npm install ai github:hedging8563/tokenlab-ai-sdk-provider
+npm install ai @tokenlabai/ai-sdk-provider
 ```
 
 ## Usage
 
 ```ts
 import { generateText } from "ai";
-import { tokenlab } from "@tokenlab/ai-sdk-provider";
+import { tokenlab } from "@tokenlabai/ai-sdk-provider";
 
 const { text } = await generateText({
   model: tokenlab.chatModel("gpt-5.4"),
@@ -33,7 +27,7 @@ console.log(text);
 ## Custom Provider Instance
 
 ```ts
-import { createTokenLab } from "@tokenlab/ai-sdk-provider";
+import { createTokenLab } from "@tokenlabai/ai-sdk-provider";
 
 export const tokenlab = createTokenLab({
   apiKey: process.env.TOKENLAB_API_KEY,

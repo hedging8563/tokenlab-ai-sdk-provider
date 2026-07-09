@@ -1,5 +1,5 @@
 {
-  "name": "@tokenlab/ai-sdk-provider",
+  "name": "@tokenlabai/ai-sdk-provider",
   "version": "0.1.0",
   "description": "TokenLab provider for Vercel AI SDK, built on the OpenAI-compatible provider.",
   "type": "module",
