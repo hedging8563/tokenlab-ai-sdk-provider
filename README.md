@@ -1,5 +1,8 @@
 # TokenLab AI SDK Provider
 
+[![CI](https://github.com/hedging8563/tokenlab-ai-sdk-provider/actions/workflows/ci.yml/badge.svg)](https://github.com/hedging8563/tokenlab-ai-sdk-provider/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/%40tokenlabai%2Fai-sdk-provider)](https://www.npmjs.com/package/@tokenlabai/ai-sdk-provider)
+
 TokenLab provider for Vercel AI SDK, built on the official OpenAI-compatible provider package.
 
 TokenLab supports OpenAI-compatible `/v1` routes plus native Responses, Anthropic Messages, Gemini, media, audio, embeddings, rerank, and translation APIs. This package focuses on the AI SDK OpenAI-compatible path for text generation, streaming, tools, and structured output.
