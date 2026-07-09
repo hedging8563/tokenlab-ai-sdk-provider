@@ -1,8 +1,11 @@
 {
   "name": "@tokenlabai/ai-sdk-provider",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "TokenLab provider for Vercel AI SDK, built on the OpenAI-compatible provider.",
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "license": "MIT",
   "author": "TokenLab",
   "homepage": "https://docs.tokenlab.sh/integrations/vercel-ai-sdk",
@@ -22,10 +25,11 @@
     "LICENSE"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "scripts": {
-    "test": "node --check ./src/index.js && node ./examples/smoke.mjs"
+    "test": "node --check ./src/index.js && node --test"
   },
   "keywords": [
     "ai-sdk",
@@ -36,9 +40,12 @@
     "model-routing"
   ],
   "dependencies": {
-    "@ai-sdk/openai-compatible": "^3.0.1"
+    "@ai-sdk/openai-compatible": "^3.0.7"
   },
   "peerDependencies": {
-    "ai": ">=5"
+    "ai": ">=7 <8"
+  },
+  "devDependencies": {
+    "ai": "^7.0.19"
   }
 }

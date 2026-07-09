@@ -10,6 +10,8 @@ TokenLab supports OpenAI-compatible `/v1` routes plus native Responses, Anthropi
 npm install ai @tokenlabai/ai-sdk-provider
 ```
 
+Version `0.2.x` targets AI SDK 7 and Node.js 22 or newer.
+
 ## Usage
 
 ```ts
@@ -17,7 +19,7 @@ import { generateText } from "ai";
 import { tokenlab } from "@tokenlabai/ai-sdk-provider";
 
 const { text } = await generateText({
-  model: tokenlab.chatModel("gpt-5.4"),
+  model: tokenlab.chatModel("gpt-5.5"),
   prompt: "Explain TokenLab in one sentence."
 });
 
