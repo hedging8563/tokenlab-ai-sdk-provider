@@ -4,6 +4,7 @@ on:
   push:
     tags:
       - "v*"
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -22,6 +23,7 @@ jobs:
           package-manager-cache: false
 
       - name: Verify tag matches package version
+        if: github.event_name == 'push'
         run: node --eval 'if (process.env.GITHUB_REF_NAME !== `v${require("./package.json").version}`) process.exit(1)'
 
       - run: npm ci
