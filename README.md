@@ -63,11 +63,11 @@ Use this provider for AI SDK OpenAI-compatible text paths. For TokenLab native e
 - Responses: `POST https://api.tokenlab.sh/v1/responses`
 - Anthropic Messages: `POST https://api.tokenlab.sh/v1/messages`
 - Gemini generateContent: `POST https://api.tokenlab.sh/v1beta/models/{model}:generateContent`
-- Images, videos, audio, embeddings, rerank, and translation: see `https://docs.tokenlab.sh`
+- Images, videos, audio, embeddings, rerank, and translation: see `https://tokenlab.sh/docs`
 
 ## Links
 
-- Docs: https://docs.tokenlab.sh/integrations/vercel-ai-sdk
-- OpenAPI: https://docs.tokenlab.sh/openapi.json
+- Docs: https://tokenlab.sh/docs/en/integrations/vercel-ai-sdk
+- OpenAPI: https://tokenlab.sh/docs/openapi.json
 - Model catalog: https://api.tokenlab.sh/v1/models
 - MCP server: https://github.com/hedging8563/tokenlab-mcp-server

@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "author": "TokenLab",
-  "homepage": "https://docs.tokenlab.sh/integrations/vercel-ai-sdk",
+  "homepage": "https://tokenlab.sh/docs/en/integrations/vercel-ai-sdk",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hedging8563/tokenlab-ai-sdk-provider.git"
